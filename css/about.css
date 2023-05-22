@@ -1,0 +1,359 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+*::selection {
+  background-color: #df85ff;
+}
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+  .kembali a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 35vh;
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+    font-size: 2vh;
+    margin-left: -0.5vh;
+    width: 70vh;
+    height: 5vh;
+    border: 1px solid #ffffff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+    transition: 0.5s;
+
+  }
+  .kembali a:hover {
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+    margin-top: 35vh;
+    text-decoration: none;
+    list-style: none;
+    font-size: 2vh;
+    margin-left: -0.5vh;
+    width: 70vh;
+    height: 5vh;
+    border: 1px solid #ffffff;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+.content {
+  color: white;
+  align-items: center;
+  justify-content: left;
+  float: left;
+  margin-top: 16%;
+  margin-left: 13%;
+  position: absolute;
+  width: 770px;
+  height: 553px;
+  opacity: 0.9;
+}
+.content h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.content h3 {
+  width: 168px;
+  height: 54px;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 54px;
+  /* identical to box height */
+  background: linear-gradient(90deg, #4200ff 0%, #df85ff 50.52%, #f700a3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-bottom: 2%;
+}
+.content p {
+  position: absolute;
+  padding-top: 2%;
+  width: 699px;
+  height: 324px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 54px;
+}
+.image {
+  position: absolute;
+  width: 1387px;
+  height: 769px;
+  left: 43%;
+  top: 23%;
+  opacity: 0.6;
+}
+.image img {
+  width: 110vh;
+  height: 60vh;
+}
+.back {
+  position: absolute;
+  left: 77%;
+  top: -4%;
+  opacity: 0.6;
+  background: url(WhatsApp_Image_2023-02-27_at_18.25.png);
+  transition: 1s;
+}
+.back img {
+  width: 330px;
+  height: 330px;
+}
+.back:hover {
+  position: absolute;
+  left: 77%;
+  top: -4%;
+  opacity: 0.9;
+  background: url(WhatsApp_Image_2023-02-27_at_18.25.png);
+  transition: 1s;
+}
+.button {
+  box-sizing: border-box;
+  position: absolute;
+  width: 330px;
+  height: 87px;
+  left: 19%;
+  top: 73%;
+  opacity: 0.6;
+  border: 5px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  font-size: 100%x;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: 0.5s;
+}
+.button:hover {
+  box-sizing: border-box;
+  position: absolute;
+  width: 317px;
+  height: 87px;
+  left: 19%;
+  top: 76%;
+  opacity: 0.9;
+  border: 5px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  font-size: 100%x;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: 0.5s;
+}
+.button button {
+  font-size: 30px;
+  color: #ffffff;
+  background: #ffffff00;
+}
+.arrow {
+  cursor: pointer;
+  height: 20px;
+  left: 5%;
+  position: absolute;
+  top: 9%;
+  transform: translateX(50%) translateY(-50%);
+  transition: transform 0.1s;
+  width: 20px;
+  transform: rotate(180deg);
+}
+
+.arrow-top,
+.arrow-bottom {
+  background-color: #666;
+  height: 4px;
+  left: -5px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.arrow-top:after,
+.arrow-bottom:after {
+  background-color: #fff;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.15s;
+}
+
+.arrow-top {
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+
+.arrow-top:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0s;
+}
+
+.arrow-bottom {
+  transform: rotate(-45deg);
+  transform-origin: top right;
+}
+
+.arrow-bottom:after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0.15s;
+}
+
+.arrow:hover .arrow-top:after {
+  left: 0;
+  transition-delay: 0.15s;
+}
+
+.arrow:hover .arrow-bottom:after {
+  right: 0;
+  transition-delay: 0s;
+}
+
+.arrow:active {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.outer {
+  display: none;
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  .back {
+    margin-left: -100px;
+    margin-top: -14px;
+  }
+  .back img {
+    width: 200px;
+    height: 200px;
+  }
+  .buttonback {
+    width: 50px;
+    height: 50px;
+  }
+  .arrow {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+  }
+  .button {
+    display: none;
+  }
+  .content {
+    width: 300px;
+    /* margin: 10%; */
+    overflow-x: hidden;
+  }
+  .content h3 {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 70px;
+  }
+  .content h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .content p {
+    width: 350px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .image {
+    width: 500px;
+    height: 600px;
+    left: -47%;
+    top: 70%;
+    opacity: 0.3;
+  }
+  .image img {
+    width: 700px;
+    height: 400px;
+    display: none;
+  }
+  .outer {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250%;
+    padding-bottom: 1%;
+    opacity: 0.5;
+  }
+}
+@media (max-width: 320px) {
+  .back {
+    margin-left: -200px;
+    margin-top: -14px;
+    overflow-x: hidden;
+  }
+  .back img {
+    width: 200px;
+    height: 200px;
+    overflow-x: hidden;
+  }
+  .arrow {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+  }
+  .content {
+    overflow-x: hidden;
+  }
+  .content h3 {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 70px;
+  }
+  .content h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .content p {
+    width: 350px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .image {
+    width: 500px;
+    height: 600px;
+    left: -47%;
+    top: 70%;
+    opacity: 0.3;
+  }
+  .image img {
+    width: 700px;
+    height: 400px;
+    display: none;
+  }
+  .outer {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250%;
+    padding-bottom: 1%;
+    opacity: 0.5;
+  }
+}

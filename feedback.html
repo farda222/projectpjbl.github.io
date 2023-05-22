@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/feedback.css" />
+    <script src="js/index.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Feedback</header>
+      <form action="https://formspree.io/f/mlekkrbw" method="POST">
+        <div class="dbl-field">
+          <div class="field">
+            <input type="text" name="name" placeholder="Your Name" />
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="field">
+            <input type="email" name="email" placeholder="Email" />
+            <i class="fas fa-envelope"></i>
+          </div>
+        </div>
+        <div class="dbl-field">
+          <div class="field">
+            <input type="number" name="phone" placeholder="Phone Number" />
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="field">
+            <input type="text" name="website" placeholder="Information" />
+            <i class="fas fa-globe"></i>
+          </div>
+        </div>
+        <div class="message">
+          <textarea placeholder="Type Message" name="message"></textarea>
+          <i class="fas fa-pen"></i>
+        </div>
+        <div class="button-area">
+          <button type="submit">Send Feedback</button>
+          <div class="buttonback">
+            <a href="index.html">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKNJREFUSEvllMENgCAMRR+b6CY6ipPpJq7iKKaJmoYgAi0ne+Ei//nbTwOdK3TW5z+AAZiArbalJS0S8fUCLLWQL4AWP4DR04FZXH7mzYGL+BvATTwFcBWPAVq8dpbx90/r9QwEsANyWisJEFENkVjOgJzNlUqRKyQX07tdJie5l+zipGRVmJx8AeLBuy+7Oz1d13VzRHPLziSqL5fMwATrDjgBmishGepbbBgAAAAASUVORK5CYII="/>
+            </a>
+          </div>
+          <span></span>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

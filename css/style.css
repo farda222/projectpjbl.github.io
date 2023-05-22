@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #f2f2f200;
+    padding: 3vh;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-top: -90px;
+    width: 380px;
+    height: 380px;
+  }
+
+.back-button {
+    padding: 1.5vh;
+    background-color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20vh;
+    color: #ffffff;
+    border: 1px solid #ffff;
+    width: 10vh;
+    margin-top: -105px;
+}
+
+.content {
+    color: #ffffff;
+    width: 55vh;
+    height: 20vh;
+    margin-left: 10vh;
+    margin-top: 10vh;
+}
+
+.content h1 {
+    font-size: 2.5vh;
+    color: #ffffff73;
+    font-weight: 100;
+    margin-bottom: 1vh;
+}
+
+.content h2 {
+    font-size: 7vh;
+    font-weight: 600;
+    margin-bottom: 1vh;
+    margin-left: -1vh;
+}
+
+.content p {
+    font-size: 2.5vh;
+    color: #ffffff73;
+}
+
+.image {
+    margin-left: 70vh;
+    margin-top: -55vh;
+}
+
+.image img {
+    width: 120vh;
+    height: 65vh;
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .content {
+        width: 40vh;
+        margin-top: -1vh;
+        margin-left: 7vh;
+    }
+
+    .image {
+        display: none;
+    }
+    .logo {
+        
+        margin-left: -7vh;
+        width: 300px;
+        height: 300px;
+      }
+}
